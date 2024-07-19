@@ -31,7 +31,7 @@ body {
   height: fit-content;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
-  overflow: auto;
+  overflow: hidden;
   background: var(--bg-url) no-repeat top center/cover;
   display: flex;
   justify-content: center;
@@ -151,5 +151,9 @@ footer {
 @media (min-width: 700px) {
   :root {
     --bg-url: url("./assets/bg-desktop.jpg");
+  }
+
+  body{
+    overflow: scroll;
   }
 }
